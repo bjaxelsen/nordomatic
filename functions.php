@@ -64,11 +64,13 @@ function nordomatic_widgets_init() {
     'after_title'   => '</h2>',
   ) );
 }
-add_action( 'widgets_init', 'nordomatic_widgets_init' );
+add_action( 'widgets_init', 'nordomatic_widgets_init', 100 );
 
 
 // Add to footer
 add_action( 'generate_footer', function() {
-  dynamic_sidebar( 'subfooter' );
+  if ( is_active_sidebar( 'subfooter' ) ) {
+    dynamic_sidebar( 'subfooter' );
+  }
 }, 100);
 
