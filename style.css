@@ -50,6 +50,7 @@
 .site-info--sub ul.menu {
   list-style-type: none;
   font-size: 85%;
+  margin: 1em 0;
 }
 .site-info--sub ul.menu li {
   display: inline-block;
