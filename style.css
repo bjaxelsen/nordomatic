@@ -58,6 +58,9 @@
 .site-info--sub ul.menu a {
   text-decoration: underline;
 }
+footer:empty {
+  display: none;
+}
 /* Content */
 h4, h5, h6 {
   margin-bottom: .3em;
