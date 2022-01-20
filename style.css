@@ -62,6 +62,10 @@
 footer:empty {
   display: none;
 }
+.flexaligncenter {
+  justify-content: center;
+  display: flex;
+}
 /* Content */
 h4, h5, h6 {
   margin-bottom: .3em;
