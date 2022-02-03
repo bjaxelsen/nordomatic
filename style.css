@@ -66,6 +66,9 @@ footer:empty {
   justify-content: center;
   display: flex;
 }
+.widget ul li.wp-block-social-link {
+  margin-bottom: 0;
+}
 /* Content */
 h4, h5, h6 {
   margin-bottom: .3em;
