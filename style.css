@@ -5,7 +5,7 @@
  Author:       &web
  Author URI:   https://ogweb.dk
  Template:     generatepress
- Version:      0.1
+ Version:      0.2
 */
 
 /* Navigation and layout */
@@ -164,79 +164,4 @@ main div.wpforms-confirmation-container-full {
   background: #bae4f0;
   border: none;
   border-radius: 5px;
-}
-
-/* Cookie consent */
-.cookiebox {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 20em;
-  z-index: 100;
-  text-align: right;
-}
-.coookiebox__header {
-  text-align: right;
-  padding: .7em 1em;
-  display: inline-block;
-  background-color: #ffffff99;
-  cursor: pointer;
-}
-.coookiebox__header span {
-  width: 9px;
-  height: 2px;
-  position: relative;
-  top: -3px;
-  background: #000;
-  display: inline-block;
-  transition: transform 2s ease;
-  transform-origin: center center;
-  transform: rotate(45deg) translate(0px, -3px);
-}
-.coookiebox__header span:last-of-type {
-  transform: rotate(-45deg) translate(0px, -3px);
-  margin-right: .3em;
-}
-.cookiebox.dismissed .coookiebox__header span {
-  transform: rotate(-45deg) translate(3px, 0px);
-}
-.cookiebox.dismissed .coookiebox__header span:last-of-type {
-  transform: rotate(45deg) translate(-3px, 0px);
-}
-.cookiebox__wrapper {
-  text-align: left;
-  background-color: var(--moerk-blaa);
-  color: #ffffffff;
-  padding: 1.5em;
-  border: 2px solid #fff;
-  overflow: hidden;
-  max-height: 22em;
-  transition: max-height 2s, padding 2s, color 2s;
-}
-.cookiebox.dismissed .cookiebox__wrapper {
-  max-height: 0;
-  padding: 0 1.5em;
-  color: #ffffff00;
-  border-top: none;
-  border-bottom: none;
-}
-.cookiebox__header {
-  font-weight: 700;
-  margin-bottom: .7em;
-}
-.cookiebox__info {
-  margin-bottom: 1.4em;
-}
-.cookiebox__button {
-  margin-right: 1em;
-}
-.cookiebox__button--accept {
-  background-color: var(--mellem-blaa);
-  font-weight: 700;
-}
-.cookie-content__status {
-  margin-top: 1.4em;
-}
-.cookie-content__status:empty {
-  margin: 0;
 }
